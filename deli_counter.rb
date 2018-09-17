@@ -1,5 +1,5 @@
 require `pry`
-def pry deli_counter.rb
+
 line_array = []
 
 def line(katz_deli)
@@ -9,6 +9,7 @@ def line(katz_deli)
     katz_deli.each_with_index(1) do | name, index|
     line_array.push("#{name}, #{index}")
       end 
+      binding.pry
         puts "The line is currently: #{line_array.join (" ")}
   end
 end
